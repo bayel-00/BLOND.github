@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLOND — Студия окрашивания блондинок | Санкт-Петербург</title>
+<meta name="description" content="BLOND — премиальная студия окрашивания блондинок в Санкт-Петербурге. Сложный блонд, аиртач, тонирование, уходы и восстановление волос. Дальневосточный проспект, 12, корп. 2.">
+
+<!-- Безопасность: политика загрузки ресурсов и referrer (полный набор заголовков — в security-headers.md) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; frame-src https://yandex.ru https://yandex.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Скорость: ранние соединения и приоритетная загрузка первого экрана -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link rel="preload" as="image" href="студия.webp" fetchpriority="high">
+<link rel="preload" as="image" href="logo.webp" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- ================= ШАПКА ================= -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="#hero" class="logo" aria-label="BLOND — на главную">
+      <img src="logo.webp" alt="BLOND" class="brand-logo logo-img" decoding="async" fetchpriority="high">
+    </a>
+    <nav class="nav">
+      <a href="#about">О студии</a>
+      <a href="#services">Услуги</a>
+      <a href="#team">Мастера</a>
+      <a href="#gallery">Работы</a>
+      <a href="#testimonials">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a href="#booking" class="header-cta"><span>Записаться</span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= МОБИЛЬНОЕ МЕНЮ ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose" aria-label="Закрыть">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3l14 14M17 3L3 17"/></svg>
+  </button>
+  <img src="logo.webp" alt="BLOND" class="brand-logo logo-dark mobile-menu-logo" loading="lazy" decoding="async">
+  <a href="#about">О студии</a>
+  <a href="#services">Услуги</a>
+  <a href="#team">Мастера</a>
+  <a href="#gallery">Работы</a>
+  <a href="#testimonials">Отзывы</a>
+  <a href="#booking">Записаться</a>
+  <a href="#contact">Контакты</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <img src="студия.webp" alt="Интерьер студии BLOND" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Студия окрашивания блондинок</div>
+    <h1>
+      <img src="logo.webp" alt="BLOND" class="brand-logo hero-logo-img" fetchpriority="high" decoding="async">
+      <span><em>Искусство</em> быть блондинкой</span>
+    </h1>
+    <p class="hero-sub">Экспертное окрашивание и уход в самом сердце Петербурга. Индивидуальный подход, безопасные техники осветления и безупречный результат.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn btn-primary"><span>Записаться онлайн</span></a>
+      <a href="#team" class="btn btn-outline">Выбрать мастера</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Листайте</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- ================= О СТУДИИ ================= -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <div class="section-label">Философия бренда</div>
+        <h2 class="section-title">Пространство, где рождается <em>ваш образ</em></h2>
+        <p>BLOND — это не просто салон. Это бутик красоты, где каждая деталь работает на создание индивидуального образа. Здесь не существует шаблонов: <strong>мы начинаем с диалога</strong>, изучаем структуру волос и пожелания, а затем создаём оттенок, который подчёркивает именно вашу индивидуальность.</p>
+        <p>Мы работаем только с <strong>безопасными техниками осветления</strong> и профессиональными уходами, которые сохраняют здоровье и блеск волос. Наши мастера — эксперты по сложному блонду, аиртачу и тонированию, регулярно проходящие обучение у ведущих колористов Европы.</p>
+        <div class="about-quote">«Блонд — это не цвет. Это состояние, в котором вы чувствуете себя безупречно».</div>
+      </div>
+      <div class="about-visual reveal-right" data-parallax="-0.05">
+        <img
+          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=70"
+          srcset="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=420&q=70 420w,
+                  https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=70 700w,
+                  https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=70 1000w"
+          sizes="(max-width:760px) 100vw, 600px"
+          width="600" height="640" loading="lazy" decoding="async" alt="Работа мастера BLOND">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= УСЛУГИ ================= -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label">Услуги и цены</div>
+      <h2 class="section-title">Мастерство <em>в каждой детали</em></h2>
+      <p class="section-desc">Полный спектр услуг по окрашиванию, восстановлению и укладке волос. Стоимость указана «от» и зависит от длины и густоты волос.</p>
+    </div>
+    <div class="services-cats">
+      <div class="svc-cat reveal" data-delay="0">
+        <div class="svc-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2C8 2 5 6 5 10c0 5 3 8 7 12 4-4 7-7 7-12 0-4-3-8-7-8z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Окрашивание</h3>
+        <ul class="svc-list">
+          <li><div><span class="svc-name">Сложный блонд</span><span class="svc-desc">Многоуровневое осветление</span></div><span class="svc-price">от 12 000 ₽</span></li>
+          <li><div><span class="svc-name">Аиртач</span><span class="svc-desc">Мягкое растяжение цвета</span></div><span class="svc-price">от 9 500 ₽</span></li>
+          <li><div><span class="svc-name">Тонирование</span><span class="svc-desc">Придание оттенка и блеска</span></div><span class="svc-price">от 5 500 ₽</span></li>
+          <li><div><span class="svc-name">Мелирование</span><span class="svc-desc">Классика и шатуш</span></div><span class="svc-price">от 7 000 ₽</span></li>
+        </ul>
+      </div>
+      <div class="svc-cat reveal" data-delay="120">
+        <div class="svc-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c-2 3-6 4-6 8a6 6 0 0012 0c0-4-4-5-6-8z"/><path d="M9 14a3 3 0 003 3"/></svg>
+        </div>
+        <h3>Уход и восстановление</h3>
+        <ul class="svc-list">
+          <li><div><span class="svc-name">Ботокс для волос</span><span class="svc-desc">Глубокое восстановление</span></div><span class="svc-price">от 4 500 ₽</span></li>
+          <li><div><span class="svc-name">Кератиновое восстановление</span><span class="svc-desc">Гладкость и блеск</span></div><span class="svc-price">от 6 000 ₽</span></li>
+          <li><div><span class="svc-name">Шелковое окрашивание</span><span class="svc-desc">Цвет + уход в одном</span></div><span class="svc-price">от 8 000 ₽</span></li>
+          <li><div><span class="svc-name">СПА-ритуал для волос</span><span class="svc-desc">Восстановление структуры</span></div><span class="svc-price">от 3 800 ₽</span></li>
+        </ul>
+      </div>
+      <div class="svc-cat reveal" data-delay="240">
+        <div class="svc-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.5 15.5M20 20L8.5 8.5"/></svg>
+        </div>
+        <h3>Стрижки и укладки</h3>
+        <ul class="svc-list">
+          <li><div><span class="svc-name">Женская стрижка</span><span class="svc-desc">С учётом типа волос</span></div><span class="svc-price">от 3 500 ₽</span></li>
+          <li><div><span class="svc-name">Укладка</span><span class="svc-desc">Локоны, гладкость, объём</span></div><span class="svc-price">от 2 500 ₽</span></li>
+          <li><div><span class="svc-name">Уход + укладка</span><span class="svc-desc">Комплексный ритуал</span></div><span class="svc-price">от 4 000 ₽</span></li>
+          <li><div><span class="svc-name">Вечерняя причёска</span><span class="svc-desc">Для особых событий</span></div><span class="svc-price">от 5 500 ₽</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= МАСТЕРА ================= -->
+<section class="section team" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label">Наши мастера</div>
+      <h2 class="section-title">Эксперты, которым <em>доверяют</em></h2>
+      <p class="section-desc">Команда колористов и стилистов с многолетним опытом. Наведите на портрет, чтобы познакомиться ближе.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal" data-delay="0" data-master="anna" role="button" tabindex="0" aria-label="Анна — подробнее">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=360&q=70"
+               srcset="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=360&q=70 360w,
+                       https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=640&q=70 640w"
+               sizes="(max-width:480px) 340px, (max-width:1100px) 45vw, 300px"
+               width="360" height="480" loading="lazy" decoding="async" alt="Анна — эксперт по сложному блонду">
+          <span class="team-more">Подробнее →</span>
+        </div>
+        <div class="team-info">
+          <h3>Анна</h3>
+          <div class="team-role">Эксперт по сложному блонду</div>
+        </div>
+      </div>
+      <div class="team-card reveal" data-delay="120" data-master="maria" role="button" tabindex="0" aria-label="Мария — подробнее">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=360&q=70"
+               srcset="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=360&q=70 360w,
+                       https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=640&q=70 640w"
+               sizes="(max-width:480px) 340px, (max-width:1100px) 45vw, 300px"
+               width="360" height="480" loading="lazy" decoding="async" alt="Мария — колорист-технолог">
+          <span class="team-more">Подробнее →</span>
+        </div>
+        <div class="team-info">
+          <h3>Мария</h3>
+          <div class="team-role">Колорист-технолог</div>
+        </div>
+      </div>
+      <div class="team-card reveal" data-delay="240" data-master="ekaterina" role="button" tabindex="0" aria-label="Екатерина — подробнее">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=360&q=70"
+               srcset="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=360&q=70 360w,
+                       https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=640&q=70 640w"
+               sizes="(max-width:480px) 340px, (max-width:1100px) 45vw, 300px"
+               width="360" height="480" loading="lazy" decoding="async" alt="Екатерина — специалист по уходу">
+          <span class="team-more">Подробнее →</span>
+        </div>
+        <div class="team-info">
+          <h3>Екатерина</h3>
+          <div class="team-role">Специалист по уходу</div>
+        </div>
+      </div>
+      <div class="team-card reveal" data-delay="360" data-master="olga" role="button" tabindex="0" aria-label="Ольга — подробнее">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=360&q=70"
+               srcset="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=360&q=70 360w,
+                       https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=640&q=70 640w"
+               sizes="(max-width:480px) 340px, (max-width:1100px) 45vw, 300px"
+               width="360" height="480" loading="lazy" decoding="async" alt="Ольга — стилист-укладка">
+          <span class="team-more">Подробнее →</span>
+        </div>
+        <div class="team-info">
+          <h3>Ольга</h3>
+          <div class="team-role">Стилист-укладка</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ГАЛЕРЕЯ ================= -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-label">Портфолио</div>
+      <h2 class="section-title">Результаты, <em>которые говорят</em></h2>
+      <p class="section-desc">Реальные работы наших мастеров: от нежного платинового блонда до сложных многоуровневых растяжек.</p>
+    </div>
+    <div class="masonry">
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Платиновый блонд">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Мягкий бежевый блонд">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Золотистый блонд">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Холодный блонд">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Аиртач">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Блонд с уходом">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Укладка">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+      <div class="masonry-item">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=480&q=65"
+             srcset="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=480&q=65 480w, https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=65 800w"
+             sizes="(max-width:480px) 100vw, (max-width:1100px) 50vw, 33vw"
+             width="600" height="750" loading="lazy" decoding="async" alt="Тонирование">
+        <div class="masonry-overlay"><div class="magnify"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ОТЗЫВЫ ================= -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="section-label">Отзывы</div>
+      <h2 class="section-title">Что говорят <em>наши клиенты</em></h2>
+    </div>
+    <div class="testimonials-wrap reveal">
+      <span class="quote-mark">“</span>
+      <div class="testimonial active">
+        <p class="testimonial-text">Впервые за много лет я вышла из салона с ощущением, что меня услышали. Анна создала именно тот оттенок, о котором я мечтала — холодный, но живой. Волосы блестят и выглядят здоровыми!</p>
+        <div class="testimonial-author">— Екатерина М.</div>
+        <div class="testimonial-stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">Мария — настоящий волшебник. Сложный блонд после неудачного окрашивания в другом месте — и вот я снова сияю. Отдельное спасибо за честный подход: объяснили, что и как будем делать.</p>
+        <div class="testimonial-author">— Ольга В.</div>
+        <div class="testimonial-stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">Атмосфера в студии — это отдельная любовь. Тишина, свет, ароматы, забота. Аиртач лёг идеально, оттенок держится уже три месяца. Теперь только сюда!</p>
+        <div class="testimonial-author">— Анна С.</div>
+        <div class="testimonial-stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial-text">Ходила на ботокс для волос после осветления — результат превзошёл ожидания. Волосы как шёлк. Екатерина подобрала уход, который реально работает. Спасибо за профессионализм!</p>
+        <div class="testimonial-author">— Юлия Д.</div>
+        <div class="testimonial-stars">★★★★★</div>
+      </div>
+      <div class="testimonial-dots">
+        <button class="dot active" data-slide="0" aria-label="Отзыв 1"></button>
+        <button class="dot" data-slide="1" aria-label="Отзыв 2"></button>
+        <button class="dot" data-slide="2" aria-label="Отзыв 3"></button>
+        <button class="dot" data-slide="3" aria-label="Отзыв 4"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЗАПИСЬ ================= -->
+<section class="section booking" id="booking">
+  <div class="container">
+    <div class="booking-grid">
+      <div class="reveal-left">
+        <div class="section-label">Онлайн-запись</div>
+        <h2 class="section-title">Подарите себе <em>идеальный блонд</em></h2>
+        <p class="section-desc">Оставьте номер телефона — администратор свяжется с вами в течение 15 минут, проконсультирует и подтвердит запись. Остальные поля можно не заполнять.</p>
+        <div class="booking-info">
+          <div class="booking-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div>
+              <div class="lbl">Режим работы</div>
+              <div class="val">Ежедневно, 10:00 — 22:00</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16.9v2a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 013.1 1h2a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L6.1 8.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></div>
+            <div>
+              <div class="lbl">Телефон</div>
+              <a class="val" href="tel:+78121234567">+7 (812) 123-45-67</a>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="lbl">Адрес</div>
+              <div class="val">Дальневосточный проспект, 12, корп. 2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="booking-form reveal-right" id="bookingForm" novalidate autocomplete="off">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fName">Имя <span class="opt">· необязательно</span></label>
+            <input type="text" id="fName" name="name" placeholder="Как к вам обращаться" maxlength="60" autocomplete="name">
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <label for="fPhone">Телефон</label>
+            <input type="tel" id="fPhone" name="phone" placeholder="+7 (___) ___-__-__" maxlength="18" inputmode="tel" autocomplete="tel" required>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <span class="fl" id="lblService">Услуга <span class="opt">· необязательно</span></span>
+            <div class="dd" id="ddService" data-placeholder="Выберите услугу">
+              <button type="button" class="dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="lblService valService">
+                <span class="dd-value is-placeholder" id="valService"></span>
+                <svg class="dd-chev" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l4 4 4-4"/></svg>
+              </button>
+              <div class="dd-panel"></div>
+              <input type="hidden" name="service" value="">
+            </div>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <span class="fl" id="lblMaster">Мастер <span class="opt">· необязательно</span></span>
+            <div class="dd" id="ddMaster" data-placeholder="Любой мастер">
+              <button type="button" class="dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="lblMaster valMaster">
+                <span class="dd-value" id="valMaster"></span>
+                <svg class="dd-chev" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l4 4 4-4"/></svg>
+              </button>
+              <div class="dd-panel"></div>
+              <input type="hidden" name="master" value="">
+            </div>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <span class="fl" id="lblDate">Дата <span class="opt">· необязательно</span></span>
+            <div class="dd" id="ddDate" data-placeholder="Выберите дату">
+              <button type="button" class="dd-btn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="lblDate valDate">
+                <span class="dd-value is-placeholder" id="valDate"></span>
+                <svg class="dd-chev" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l4 4 4-4"/></svg>
+              </button>
+              <div class="dd-panel"></div>
+              <input type="hidden" name="date" value="">
+            </div>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+          <div class="form-field">
+            <span class="fl" id="lblTime">Время <span class="opt">· необязательно</span></span>
+            <div class="dd" id="ddTime" data-placeholder="Сначала выберите дату">
+              <button type="button" class="dd-btn" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="lblTime valTime" disabled>
+                <span class="dd-value is-placeholder" id="valTime"></span>
+                <svg class="dd-chev" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l4 4 4-4"/></svg>
+              </button>
+              <div class="dd-panel"></div>
+              <input type="hidden" name="time" value="">
+            </div>
+            <p class="field-error" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <!-- Ловушка для ботов: люди это поле не видят и не заполняют -->
+        <div class="hp" aria-hidden="true">
+          <label for="fWebsite">Не заполняйте это поле</label>
+          <input type="text" id="fWebsite" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-field consent">
+          <div class="checkbox-field">
+            <input type="checkbox" id="privacyCheck" name="consent">
+            <label for="privacyCheck">Я согласен с <a href="#" class="privacy-link">политикой конфиденциальности</a> и даю согласие на обработку персональных данных</label>
+          </div>
+          <p class="field-error" aria-live="polite"></p>
+        </div>
+
+        <p class="form-error" id="formError" role="alert"></p>
+        <button type="submit" class="btn-submit">Записаться</button>
+
+        <div class="form-success">
+          <div class="checkmark-circle">
+            <svg viewBox="0 0 40 40">
+              <path class="checkmark-path" d="M10 20 L17 27 L30 13"/>
+            </svg>
+          </div>
+          <h3>Заявка отправлена</h3>
+          <p>Спасибо! Администратор перезвонит вам в течение 15 минут, чтобы проконсультировать и подтвердить запись.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНТАКТЫ ================= -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="section-label">Контакты</div>
+        <h2 class="section-title">Ждём вас <em>в студии</em></h2>
+        <ul class="contact-list">
+          <li>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="lbl">Адрес</div>
+              <div class="val">Санкт-Петербург,<br>Дальневосточный проспект, 12, корп. 2</div>
+            </div>
+          </li>
+          <li>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16.9v2a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 013.1 1h2a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L6.1 8.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg></div>
+            <div>
+              <div class="lbl">Телефон</div>
+              <a class="val" href="tel:+78121234567">+7 (812) 123-45-67</a>
+            </div>
+          </li>
+          <li>
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div>
+              <div class="lbl">Режим работы</div>
+              <div class="val">Ежедневно, 10:00 — 22:00</div>
+            </div>
+          </li>
+        </ul>
+        <div class="socials">
+          <a href="tg://resolve?domain=salonblond" class="social-btn" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.8 15.9l-.4 3.8c.6 0 .8-.2 1.1-.5l2.7-2.6 5.5 4c1 .6 1.7.3 2-.9l3.6-17c.3-1.5-.5-2.1-1.5-1.7L1.5 9.6c-1.5.6-1.5 1.4-.2 1.8l5.2 1.6L18.6 5c.6-.4 1.2-.2.7.2z"/></svg>
+          </a>
+          <a href="https://vk.com/studio_blond" class="social-btn" aria-label="VK" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.2 17.2c-5.7 0-9-3.9-9.1-10.4h2.9c.1 4.8 2.2 6.8 3.9 7.2V6.8h2.7v4.1c1.7-.2 3.4-2.1 4-4.1h2.7c-.4 2.6-2.3 4.5-3.6 5.3 1.3.7 3.4 2.3 4.2 5.1h-3c-.6-1.9-2.2-3.4-4.3-3.6v3.6z"/></svg>
+          </a>
+          <a href="https://max.ru/u/f9LHodD0cOLIqlrFRJRzEr4jigNQIc7lcp5rwFbKlk8NGatY0BbYivQ3dFM" class="social-btn" aria-label="MAX" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3c-4.97 0-9 3.58-9 8 0 2.36 1.16 4.48 3 5.95V21l3.4-2.05c.83.18 1.7.28 2.6.28 4.97 0 9-3.58 9-8s-4.03-8-9-8z"/><path d="M8 14V9.5l4 3.5 4-3.5V14"/></svg>
+          </a>
+          <a href="https://instagram.com/susanna_saakowa/" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-map reveal-right">
+        <div class="map-facade" id="mapFacade" role="button" tabindex="0" aria-label="Открыть карту">
+          <div class="map-bg"></div>
+          <div class="map-facade-content">
+            <div class="map-pin">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <img src="logo.webp" alt="BLOND" class="brand-logo logo-dark map-logo" loading="lazy" decoding="async">
+            <p>Дальневосточный проспект, 12, корп. 2</p>
+            <span class="map-load-btn">Нажмите, чтобы открыть карту</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="#hero" class="footer-logo" aria-label="BLOND — наверх">
+        <img src="logo.webp" alt="BLOND" class="brand-logo logo-light" loading="lazy" decoding="async">
+      </a>
+      <nav class="footer-nav">
+        <a href="#about">О студии</a>
+        <a href="#services">Услуги</a>
+        <a href="#team">Мастера</a>
+        <a href="#gallery">Работы</a>
+        <a href="#booking">Записаться</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span class="copy">© <span id="year">2026</span> <img src="logo.webp" alt="BLOND" class="brand-logo logo-light copy-logo" loading="lazy" decoding="async"> Студия окрашивания блондинок. Санкт-Петербург.</span>
+      <span><a href="#" class="privacy-link link-underline">Политика конфиденциальности</a> · <a href="#" class="privacy-link">Согласие на обработку данных</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= МОДАЛКА МАСТЕРА ================= -->
+<div class="modal" id="masterModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3l14 14M17 3L3 17"/></svg>
+    </button>
+    <div class="modal-img"><img id="modalImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""></div>
+    <div class="modal-body">
+      <h3 id="modalName"></h3>
+      <div class="role" id="modalRole"></div>
+      <p id="modalText"></p>
+      <div class="modal-tags" id="modalTags"></div>
+      <a href="#booking" class="btn btn-primary" id="modalBook"><span>Записаться к мастеру</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= МОДАЛКА ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ ================= -->
+<div class="modal" id="privacyModal">
+  <div class="modal-content privacy-content">
+    <button class="modal-close" id="privacyClose" aria-label="Закрыть">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3l14 14M17 3L3 17"/></svg>
+    </button>
+    <h2>Политика конфиденциальности</h2>
+    <p>Настоящая Политика конфиденциальности персональных данных (далее — Политика) действует в отношении всей информации, которую сайт студии окрашивания «BLOND» (далее — Студия) может получить о Пользователе во время использования сайта.</p>
+
+    <h3>1. Общие положения</h3>
+    <p>1.1. Использование сайта Пользователем означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.</p>
+    <p>1.2. В случае несогласия с условиями Политики Пользователь должен прекратить использование сайта.</p>
+
+    <h3>2. Предмет политики конфиденциальности</h3>
+    <p>2.1. Настоящая Политика устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет при заполнении формы обратной связи или онлайн-записи на сайте.</p>
+    <p>2.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики, предоставляются Пользователем путём заполнения формы записи и включают в себя: ФИО, номер контактного телефона.</p>
+
+    <h3>3. Цели сбора персональной информации</h3>
+    <p>3.1. Персональные данные Пользователя Администрация сайта может использовать в целях:</p>
+    <ul>
+      <li>Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта, оказания услуг, обработки запросов и заявок от Пользователя.</li>
+      <li>Подтверждения записи на процедуры в Студию.</li>
+    </ul>
+
+    <h3>4. Способы и сроки обработки персональной информации</h3>
+    <p>4.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.</p>
+
+    <h3>5. Файлы Cookie</h3>
+    <p>5.1. Сайт использует файлы cookie для обеспечения корректной работы интерфейса и сбора аналитической информации. Продолжая использовать сайт, вы даете согласие на использование файлов cookie.</p>
+  </div>
+</div>
+
+<!-- ================= ЛАЙТБОКС ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3l14 14M17 3L3 17"/></svg>
+  </button>
+  <img id="lightboxImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+</div>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">
+    Мы используем файлы cookie для улучшения работы сайта и анализа трафика. Продолжая просмотр, вы соглашаетесь с нашей <a href="#" class="privacy-link">политикой конфиденциальности</a>.
+  </div>
+  <button class="btn btn-primary" id="cookieAccept"><span>Принять</span></button>
+</div>
+
+</body>
+</html>
